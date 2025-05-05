@@ -1,0 +1,192 @@
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: "SelectaTrial Light", sans-serif;
+  background-color: #1d1d1d;
+  color: white;
+}
+header {
+  margin: auto;
+  max-width: 1216px;
+}
+@font-face {
+  font-family: "SelectaTrial Light";
+  src: url("/fonts/SelectaTrial-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "SelectaTrial Regular";
+  src: url("/fonts/SelectaTrial-Regular.woff2") format("woff2");
+  font-style: normal;
+  font-weight: normal;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+li {
+  list-style: none;
+}
+header nav ul li a:hover {
+  cursor: pointer;
+}
+header ul li {
+  padding: 12px;
+}
+header ul {
+  margin: 0;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: white;
+  padding: 10px;
+  z-index: 1;
+}
+nav ul ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+nav ul ul li {
+  padding: 0;
+}
+header {
+  background: #1d1d1d;
+}
+
+.header-content {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  align-items: end;
+}
+
+.header-content h2,
+.header-content img {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.header-content img {
+  margin: 50px;
+  margin-left: 90px;
+}
+.header-content h2 {
+  margin-bottom: 134px;
+}
+h2 {
+  font-size: 24px;
+}
+#about {
+  background-color: #dcdbd0;
+  color: #1d1d1d;
+  padding: 116px 23px;
+}
+h1 {
+  font-size: 61.44px;
+  max-width: 1010px;
+  text-align: center;
+  margin: 0 auto 132px;
+  text-transform: uppercase;
+}
+.cards {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* flex-wrap: wrap; */
+}
+.card {
+  height: 303px;
+  border-radius: 8px;
+  display: flex;
+  flex: 1 1 25%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 25px;
+}
+.card div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card h3 {
+  font-size: 38.4px;
+  font-weight: 300;
+  margin: 0;
+}
+.card image {
+  width: 30px;
+  height: 30px;
+}
+.card p {
+  font-size: 24px;
+  margin: 0;
+}
+.card:nth-of-type(1) {
+  background: #cccbbd;
+}
+.card:nth-of-type(2) {
+  background: #cac6b4;
+}
+.card:nth-of-type(3) {
+  background: #b7b4a6;
+}
+.card:nth-of-type(4) {
+  background: #a2a199;
+}
+#contact {
+  margin-top: 116px;
+  margin-left: 129px;
+  margin-right: 129px;
+}
+#contact h2 {
+  font-size: 61.44px;
+  margin-bottom: 48px;
+}
+/* #contact {
+  grid-template-columns: auto;
+  grid-template-rows: auto;
+  flex-direction: column;
+  justify-content: center;
+} */
+.wr-1,
+.wr-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.relative input {
+  display: flex;
+  height: 38px;
+  width: 426px;
+  font-size: 38.4px;
+}
+.relative label {
+  font-size: 16px;
+}
+
+button {
+  font-size: 61.44px;
+}
+.wr-field {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* две равные колонки */
+  align-items: start;
+}
+
+.wr-1,
+.wr-2 {
+  display: contents;
+
+button {
+  grid-column: 2; /* ставим в правую колонку */
+  justify-self: end; /* выравниваем по правому краю */
+  border: 1px solid #ccc;
+}
